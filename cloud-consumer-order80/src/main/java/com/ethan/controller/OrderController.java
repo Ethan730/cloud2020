@@ -19,8 +19,8 @@ import org.springframework.web.client.RestTemplate;
 public class OrderController {
     @Autowired
     private RestTemplate restTemplate;
-//    public static final String PAYMENT_URL = "http://CLOUD-PAYMENT-SERVICE";
-    public static final String PAYMENT_URL = "http://localhost:8001";
+    public static final String PAYMENT_URL = "http://CLOUD-PAYMENT-SERVICE";
+//    public static final String PAYMENT_URL = "http://localhost:8001";
 
     @GetMapping("/consumer/payment/create")
     public CommonResult<Payment> create(Payment payment){
